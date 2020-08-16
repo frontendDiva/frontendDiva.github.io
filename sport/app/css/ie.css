@@ -1,0 +1,12 @@
+.base-slider.slick-carousel {
+    display: none;
+}
+.base-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    clear: both;
+}
+.expectations{
+    height: 100vh;
+}

@@ -1,0 +1,1144 @@
+@import "fonts";
+@import "global";
+@import "vars";
+
+/*Главный экран и меню*/
+.main{
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: $text-color;
+}
+.main__inner{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    position: relative;
+}
+.main__btn{
+    width: 265px;
+    background-color: $text-color;
+    border: 2px solid $text-color;
+    color: $btn-color;
+    text-transform: uppercase;
+    padding: 10px 60px 15px 65px;
+    font-weight: 700;
+    &:hover{
+        background-color:$text-color;
+        border:2px solid $text-color;
+    }
+}
+.main__networks{
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   bottom: -80px;
+    &-item{
+        width: 30px;
+        height: 30px;
+        border: 1px solid $text-color;
+        border-radius: 50%;
+        margin-right: 8px;
+        &:hover{
+            background-color: $text-color;
+            border: 1px solid $text-color;
+            cursor: pointer;
+        }
+    }
+}
+.main__title{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+}
+.main__subtitle{
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.main__location{
+    font-weight: 400;
+    margin-bottom: 105px;
+}
+.header__inner{
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__call{
+     color:$btn-color;
+    margin: 40px 40px 0 0;
+    text-align: right;
+    &-text{
+        font-size: 0.9rem;
+    }
+    &-phone{
+        font-size: 1.25rem;
+        color: $btn-color;
+        &:hover{
+            text-decoration: none;
+            cursor: pointer;
+            color:$title-white;
+        }
+    }
+}
+/*Что это?*/
+.concept{
+    padding-bottom: 100px;
+    background-color: $yellow-bg;
+    padding-top: 50px;
+}
+.concept__inner{
+    margin: 0 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.concept__text{
+    text-align: left;
+    width: 90%;
+}
+.concept__text-title{
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-bottom: 55px;
+    span{
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+}
+.concept__text-subtitle{
+    font-weight: 400;
+}
+.concept__img{
+    margin-right: 10px;
+}
+.concept__text-icons{
+    margin-top: 44px;
+ display: flex;
+ flex-direction: column;
+}
+.concept__icons-box{
+    display: inline-block;
+    text-transform: uppercase;
+    img{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/*Причины*/
+.reason{
+    margin-bottom: 100px;
+}
+.reason__transfer{
+  margin-top: 40px;
+}
+.reason__transfer-subtitle{
+    font-weight: 400;
+}
+.reason__transfer-item{
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 20%;
+    img{
+        border-radius:50%;
+        width: 60%;
+    }
+}
+.reason__transfer-row1,
+.reason__transfer-row2{
+display: flex;
+justify-content: space-around;
+}
+.reason__transfer-row2{
+margin: 20px 0;
+}
+
+/*Слайдер*/
+.expectations{
+    background-color: $yellow-bg;
+    padding-bottom: 100px;
+}
+
+/*Расписание*/
+.timetable{
+    margin-bottom: 100px;
+}
+.timetable__row--1,
+.timetable__row--2{
+    display: flex;
+    justify-content: space-around;
+}
+.timetable__box{
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    height: 220px;
+    margin-top: 25px;
+    background-color: $timetable-bg;
+}
+.timetable__suptitle{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.timetable__title{
+font-weight: 500;
+margin-bottom: 12px;
+font-size: 1.2rem;
+}
+.timetable__link{
+text-decoration: underline;
+color:$link-color;
+font-weight: 400;
+font-size: 0.75rem;
+margin-bottom: 15px;
+}
+.timetable__btn{
+text-transform: uppercase;
+background-color: transparent;
+border: 2px solid $btn-color;
+color:$btn-color;
+padding: 10px 15px 10px 20px;
+font-weight: 500;
+font-size: 0.75rem;
+&:hover{
+    color:#fff;
+    background-color: $btn-color;
+}
+}
+
+/*Программа*/
+ .program{
+     padding-bottom: 100px;
+     background-color: $yellow-bg;
+ }
+ 
+ /*Что такое Аюрведа*/
+ .ayurveda__text{
+     text-align: center;
+     font-weight: 300;
+     font-size: 1.2rem;
+     span{
+         margin-top: 25px;
+     }
+ }
+
+ /*Программа Аюрведы*/
+ .ayurveda-program{
+     padding-bottom: 100px;
+ }
+ .ayurveda-program__inner{
+     display: flex;
+     flex-direction: column;
+ }
+ .ayurveda-program__item{
+     display: flex;
+     margin-left: 75px;
+     margin-top: 20px;
+ }
+ .ayurveda-program__title{
+    margin: 70px 0 70px 0;
+     text-align: center;
+     font-weight: 500;
+     font-size: 1.5rem;
+ }
+.ayurveda-program__item-subtitle{
+    font-weight: 300;
+    align-self: center;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 12px;
+}
+/*Центр*/
+.ayurveda-center{
+   padding-bottom: 100px;
+}
+     
+.ayurveda-center__bg{
+    background-color: $btn-color;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    z-index: -10;
+}
+.ayurveda-center__inner{
+    display:flex;
+}
+.ayurveda-center__images{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.ayurveda-program__item-img{
+    border-radius: 50%;
+}
+.ayurveda-center__info{
+    text-align: left;
+}
+.ayurveda-center__img{
+    margin: 20px;  
+    z-index: 20;
+    &:hover{
+        transform: scale(1.25);
+        transition: 1s;
+    }
+}
+.ayurveda-center__title{
+    font-size: 1.9rem;
+}
+.ayurveda-center__subtitle{
+    color:$text-color;
+    margin-bottom: 40px;
+}
+.ayurveda-center__text{
+    font-size: 0.9rem;
+}
+.ayurveda-center__pluses-list{
+margin-top: 60px;
+}
+
+/*Инструкторы*/
+.instructors{
+    background-color: $footer-color;
+    padding-bottom: 100px;
+}
+.instructors__slider{
+    width: 80%;
+    margin: 40px auto;
+    color:$title-white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .slick-dots{
+        display: inline-flex;
+    }
+}
+.instructors__slider-item{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    margin-top: 12px;
+
+}
+.instructors__info{
+    position: absolute;
+    text-align: left;
+    background-color: rgba(68, 68, 68, 0.5);
+    background-position:  0 bottom;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    bottom: 0;
+    right: 0;
+
+}
+.instructors__intro{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid $title-white;
+    height: 70%;
+    width: 40%;
+    align-self:center;
+    margin-left: 10px;
+
+}
+.instructors__descr{
+    margin: 40px 0 0 10px;
+}
+.instructors__name{
+    font-family: $bold;
+    font-size: 1.5rem;
+}
+.instructors__subtitle,
+.instructors__descr{
+    font-family: $regular;
+    font-size: 0.9rem;
+}
+
+/*Отзывы*/
+.reviews{
+    padding-bottom: 40px;
+}
+.reviews__slider{
+    .slick-dots{
+        display: none;
+        li {
+            display:none ;
+            button{
+                display: none;
+            }
+        }
+    }
+}
+.reviews__info{
+    margin-left: 40px;
+    display: inline-block;
+}
+.reviews__slider{
+    margin: 0 0 80px 0;
+}
+.reviewer__slider-item{
+display: flex;
+}
+.reviewer__img{
+    border-radius:50%;
+}
+.reviews__img{
+    display: inline-block;
+    padding: 20px;
+    z-index: 20;
+    &:hover{
+      transform: scale(1.2);  
+      transition: 1s;
+    }
+}
+.reviews__name{
+    font-size: 1.2rem;
+    font-family: $regular;
+    margin-bottom: 35px;
+}
+.reviews__text{
+    text-align: left;
+    margin-top: 10px;
+    font-family: $light-italic;
+}
+
+/*Почему выбрали нас?*/
+.features{
+    background-color: $yellow-bg;
+    padding-bottom: 100px;
+}
+.features__wrapper1,
+.features__wrapper2{
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.features__wrapper-item{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.features__name{
+    font-family: $bold;
+    font-size: 1.2rem;
+    margin-top: 35px;
+}
+.features__img{
+    position: relative;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    border:2px solid $title-white;
+    img{
+        margin-top: 10px;
+    }
+    &::after{
+        position: absolute;
+        content:'';
+        width: 110px;
+        height: 110px;
+          border:1px solid $title-white;
+          border-radius:50%;
+          right: -17px;
+          top: -15px;
+    }
+    .features__subtitle{
+        font-family: $regular;
+    }
+    &:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
+}
+
+/*Как мы работаем*/ 
+.process{
+    padding-bottom: 100px;
+}
+.process__wrapper{
+    display: flex;
+    text-align: center;
+    margin-top: 65px;
+    justify-content: space-between;
+}
+.process__wrapper-item{
+    position: relative;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    &::after{
+        top: 25px;
+        right: -50px;
+        position: absolute;
+        content:'';
+        width: 35px;
+        height: 25px;
+        background-image: url(../img/next.svg);
+    }
+}
+.process-last{
+    &::after{
+        display: none;
+    }
+}
+.process__img{
+    width: 90px;
+    height: 90px;
+    border-radius:50%;
+    border:2px solid $btn-color;
+    margin-bottom: 20px;
+    img{
+        margin-top: 20px;
+    }
+}
+.process__subtitle{
+    font-size: 0.9rem;
+    font-family: $regular;
+    a{
+        color: $btn-color;
+    }
+}
+
+/*Цены*/
+.cost{
+    background-color: $footer-color;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cost__rates{
+    background-color:$title-white;
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.cost__rates-position{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cost__rates-descr{
+    font-size: 1.35rem;
+    font-family: $medium;
+    margin: 3px;
+}
+.cost__rates-price{
+    color: $btn-color;
+    font-family: $light;
+    font-size: 1.25rem;
+    span{
+        font-family: $bold;
+    }
+}
+.cost__rates-wrapper{
+     margin: 23px;
+}
+.cost__rates-econom{
+    background-color:$btn-color;
+    text-align: left;
+    display: flex;
+    padding: 30px 0 4% 0;
+    justify-content: space-around;
+
+}
+.cost__rates-btn{
+   button{
+       border:2px solid $title-white;
+       background-color: transparent;
+       padding: 10px 50px;
+        text-transform: uppercase;
+        color:$title-white;
+        font-size: 0.9rem;
+        font-family: $bold;
+   }
+}
+.cost__title{
+    padding: 40px 0;
+}
+.cost__include{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cost__list{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-family: $regular;
+    li{
+        position: relative;
+        &::before{
+            left: -40px;
+            bottom: 7px;
+            width: 15px;
+            height: 11px;
+            position: absolute;
+            content: '';
+            background-image: url(../img/include.png);
+            z-index: 25;
+        }
+    }
+}
+.cost__title{
+    margin-top: 75px;
+    font-size: 1.5rem;
+    font-family: $medium;
+    text-align: center;
+}
+.cost__subtitle{
+    font-family: $regular;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*Гарантии*/
+.guarantee{
+    padding-bottom: 100px;
+}
+.guarantee__title-subtitle{
+    font-family: $light-italic;
+    text-align: center;
+}
+.guarantee__img{
+    display: inline-block;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.guarantee__docs-title{
+    font-size: 1.5rem;
+    font-family: $medium;
+    text-align: center;
+    margin-top: 50px;
+}
+.guarantee__docs{
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.guarantee__img-subtitle{
+    font-size: 0.8rem;
+    font-family: $regular;
+    margin:10px 0 0 0;
+}
+
+/*Контакты*/
+.contacts{
+    padding-bottom: 100px;
+    background-color:$yellow-bg;
+}
+.contacts__title{
+    padding-top: 50px;
+    font-size: 1.6rem;
+    font-family: $medium;
+}
+.contacts__subtitle-title{
+    font-family: $regular;
+    padding:15px 0;
+    font-size: 1.3rem;
+}
+.contacts__networks{
+    margin-top: 15px;
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    a{
+        border: 1px solid $title-white;
+        border-radius:50%;
+        height: 40px;
+        width: 40px;
+        &:hover{
+            background-color:$btn-color;
+            border:1px solid $btn-color;
+        }
+        img{
+            margin-top: 10px;
+        }
+    }
+}
+.contacts__wrapper{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.contacts__phone-suptitle{
+    margin-top: 13px;
+    font-size: 0.75rem;
+    font-family: $light-italic;
+}
+.contacts__phone-number{
+    font-size: 1.75rem;
+    a{
+        font-size: 1.5rem;
+        color: #000;
+        &:hover{
+            color: $title-white;
+            text-decoration: none;
+        }
+    }
+}
+.contacts__offices{
+    display: flex;
+    justify-content: space-around;
+}
+.contacts__map-subtitle{
+    font-size: 0.8rem;
+    font-family: $regular;
+}
+
+/*Футер*/
+.footer{
+    background-color:$title-white;
+}
+.footer__inner{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer__text{
+    text-align: right;
+    font-family: $regular;
+}
+/*Всплывающее окно*/
+.popup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    height: 50vh;
+    background-color:$title-white;
+    width: 300px;
+    p{
+        font-family: $bold;
+        font-size: 12px;
+    }
+    img{
+        position: absolute;
+        margin: 10px;
+    }
+
+}
+.popup__input{
+    input{
+        border: none;
+        text-align: center;
+        margin-top: 10px;
+        width: 205px;
+        height: 40px;
+    }
+    &:focus{
+        border: none;
+    }
+}
+.popup__button{
+    margin-top: 15px;
+    button{
+        padding: 0 40px;
+        font-family: $medium;
+        width: 230px;
+        height: 45px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: $btn-color;
+        border:2px solid $btn-color;
+        &:hover{
+            color: $title-white;
+            background-color: $btn-color;
+        }
+    }
+}
+/*Валидация формы*/
+.valid{
+    background-color: lightgreen;
+}
+.invalid {
+    background-color: lightsalmon;
+}
+
+
+
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .concept__text {
+        margin-left: 20px;
+    }
+    .concept__text-icons {
+        margin-top: 15px;
+    }
+    .timetable__box {
+        padding: 18px 10px 12px 10px;
+        width: 205px;
+        height: 200px;
+        margin-top: 15px;
+    }
+    .title{
+        margin: 23px auto;
+    }
+    .ayurveda-program__title {
+        margin: 40px 0 40px 0
+    }
+    .ayurveda-program__item-img {
+        width: 22%;
+    }
+    .ayrveda-center__img{
+        width: 30%;
+    }
+    .cost__rates-econom {
+        padding: 20px 0;
+    }
+    .cost__rates-wrapper{
+        margin: 0;
+        padding: 50px 50px 25px 50px;
+    } 
+    .contacts__subtitle-title {
+        padding: 11px 0;
+    }
+
+
+
+}
+
+@media (max-width:992px) {
+    html{
+        font-size: 12px;
+    }
+    .container {
+        max-width: 750px;
+    }
+    .concept{
+        height: 100vh;
+    }
+    .concept__text{
+        text-align: center; 
+    }
+    .concept__text-title {
+        margin-bottom: 20px;
+    }
+    .concept__inner {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .concept__text-icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .concept__icons-box img {
+        margin: 10px;
+    }
+    .timetable__box {
+        width: 135px;
+        height: 191px;
+        margin-top: 25px;
+    }
+    .timetable__btn{
+        font-size: 0.6rem;
+    }
+    .timetable__title{
+        font-size: 1rem;
+    }
+    .ayrveda-center__img {
+        height: 22%;
+        margin-right: 7px;
+    }
+    .instructors__slider{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .process__wrapper-item::after{
+        display: none;
+    }
+    .cost__rates-econom {
+        padding: 20px;
+    }
+    .contacts__networks a {
+        height: 33px;
+        width: 33px;
+    }
+    .contacts__networks a img {
+        margin-top: 10px;
+    }
+    .contacts__map{
+        margin-right: 7px;
+    }
+}
+
+
+
+
+@media (max-width:767px) {
+    html{
+        font-size: 10px;
+    }
+    .container {
+        max-width: none;
+    }
+    .main__networks-item img{
+        margin-top: 8px;
+    }
+    .concept__img{
+            margin: 0 0 15px 0;
+    }
+    .reason__transfer-subtitle {
+        margin-top: 15px;
+        width: 110px;
+    }
+    .ayrveda-center__img {
+        height: 23%
+    }
+    .cost__list{
+        margin-left: 30px;
+    }
+    .ayurveda-center__text {
+        font-size: 1rem;
+    }
+    .reviews__text {
+        font-size: 1.2rem;
+    } 
+    .guarantee__img-subtitle,
+    .contacts__phone-suptitle,
+    .contacts__map-subtitle {
+        font-size: 1rem;
+    }
+    .contacts__map iframe {
+        width: 85%;
+    }
+
+}
+
+@media (max-width:576px){
+    .reason__transfer-row2{
+        margin: 70px;
+    }
+    .reason__transfer{
+        font-size: 0.8rem;
+    }
+    .reason__transfer-item img {
+        width: 130px;
+    }
+    .timetable__box {
+        width: 127px;
+        height: 169px;
+    }
+    .ayurveda-program__item {
+        margin-left: 20px;
+    }
+    .ayrveda-center__img {
+        height: 19%;
+    }
+    .process__img {
+        width: 80px;
+        height: 80px;
+    }
+    .process__img img {
+        margin-top: 15px;
+    }
+    .cost__rates-wrapper {
+        padding: 38px 25px 25px 20px;
+    }
+    .contacts__offices{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .contacts__phone{
+        text-align: right;
+    }
+    .contacts__networks{
+            margin: 14px 0 0 14px;
+    }
+    .contacts__subtitle-title{
+        margin-left: 90px;
+    }
+    .contacts__networks a{
+        height: 25px;
+        width: 25px;
+    }
+    .contacts__networks a img {
+        margin-top: 6px;
+    }
+    .footer__inner {
+        align-items: flex-end;
+    }
+      .contacts__map iframe {
+          width: 120%;
+      }
+} 
+@media(max-width:540px){
+    .header__call{
+        margin: 35px 0 0 0;
+    }
+    .concept{
+        height: 93vh;
+    }
+    .concept__img img{
+        width: 100%;
+    }
+    .concept__icons-box {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .base-slider__subtitle{
+        font-size: 1rem;
+    }
+    .reason {
+        height: 70vh;
+    }
+    .reason__transfer-item img {
+        width: 80px;
+    }
+    .reason__transfer-row2{
+        margin: 23px;
+    }
+    .timetable__row--1
+    ,.timetable__row--2{
+        flex-wrap: wrap;
+    }
+    .timetable__box{
+        margin-top: 10px;
+            width: 170px;
+            height: 140px;
+    }
+    .ayurveda-program__title{
+        margin: 21px 0;
+    }
+    .ayurveda-program__item-img{
+        width: 100px;
+        height: 100px;
+    }
+    .ayurveda-program-item{
+        margin-left: 0;
+    }
+    .ayurveda-center__images{
+        display: none;
+    }
+    .ayurveda-center__text{
+        text-align: center;
+    }
+    .reviews__name{
+        margin-bottom: 23px;
+    }
+    .reviews__info{
+        text-align: center;
+        margin-left: 0;
+    }
+    .reviews__img{
+        display: flex;
+        justify-content: center;
+    }
+    .features__img{
+        border:none;
+        &::after{
+            display: none;
+        }
+    }
+    .features__name{
+        margin-top: 0;
+    }
+    .process__wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .process__img{
+        width: 50px;
+        height: 50px;
+        img{
+            margin-top: 12px;
+            width: 25px;
+        }
+    }
+    .cost__title{
+        margin-top: -7px;
+    }
+    .cost__rates-wrapper {
+        padding: 21px 9px 17px 8px;
+    }
+    .cost__rates-descr{
+        font-size: 0.8rem;
+    }
+    .features__subtitle{
+        font-size: 0.9rem;
+    }
+    .cost__rates-btn button{
+        padding: 7px 30px;
+    }
+    .cost__rates-econom{
+        padding: 11px;
+    }
+    .guarantee__docs {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .guarantee__img-subtitle{
+        margin: 10px 0;
+    }
+    .guarantee__img img{
+        height: 120px ;
+    }
+    .contacts__networks{
+        width: 38%;
+        a{
+            margin-left: 7px;
+        }
+    }
+    .contacts__subtitle-title{
+        margin-left: 35px;
+    }
+    .contacts__phone-number a{
+        font-size: 1.2rem;
+    }
+    .contacts__map{
+        width: 70%;
+    }
+}
