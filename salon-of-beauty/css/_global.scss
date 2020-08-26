@@ -1,0 +1,35 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    background-color: #1d1b38;
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.btn{
+    width: 220px;
+    height: 45px;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 23px;
+    background-color: #f6bed6;
+    color: #336d88;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

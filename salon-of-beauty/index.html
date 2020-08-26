@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Beauty&Happy</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="Logo" class="logo">
+          <div class="header__logo-text">
+            Beauty&Happy
+          </div>
+        </div>
+        <div class="header__call">
+          <div class="header__phone-link wow fadeIn" data-wow-duration="1s">
+            +7 (210) 733-34-53
+          </div>
+          <div class="header__back-call wow fadeIn" data-wow-duration="2s">
+            <a href="#">Заказать обратный звонок</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__inner">
+        <div class="main__title">Beauty & Happy</div>
+        <div class="main__subtitle">
+          Салон для души и тела
+        </div>
+        <div class="main__form wow flipInX" data-wow-duration="1s">
+          <form class="validate-form" id="main" action="">
+            <h3 class="main__form-title">Нет времени читать?</h3>
+            <h5 class="main__form-subtitle">Оставляйте номер, мы вам перезвоним!</h5>
+            <input class="form-input" type="phone" placeholder="Ваш телефон">
+            <button class="btn submit-btn">Позвоните мне</button>
+          </form>
+        </div>
+        <div class="hidden-popup">
+          <form class="validate-form" id="form" class="hidden-popup__form">
+            <div class="hidden-popup__title">Обратный звонок</div>
+            <div class="hidden-popup_subtitle">Оставляйте номер, мы вам перезвоним!</div>
+            <input class="form-input" type="phone" name="phone" placeholder="Ваш телефон"> <br>
+            <button class="btn submit-btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+          </form>
+        </div>
+        <div class="hidden-popup__bg"></div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+  <section class="descr">
+    <h3 class="descr__title">
+      Дом красоты Beauty&Happy - место где вам всегда рады
+    </h3>
+    <div class="container">
+      <div class="descr__items">
+        <div class="descr__item">
+          <div class="descr__pluses-info wow slideInLeft" data-wow-duration="1s">
+            <div class="descr__pluses-title">
+              Мы ждем тебя!
+            </div>
+            <div class="descr__pluses-subtitle">
+              Приветливые администраторы всегда постараются <br> учесть любое ваше пожелание.
+            </div>
+          </div>
+          <div class="descr__img">
+            <img src="img/descr-1.jpg" alt="chair">
+          </div>
+        </div>
+        <div class="descr__item">
+          <div class="descr__pluses-info wow slideInRight" data-wow-duration="1s">
+            <div class="descr__pluses-title">
+              На самом пике моды
+            </div>
+            <div class="descr__pluses-subtitle">
+              В работе используются проверенные <br> бренды от мировых лидеров индустрии
+            </div>
+          </div>
+          <div class="descr__img descr__img--2">
+            <img src="img/descr-2.jpg" alt="chair">
+          </div>
+        </div>
+
+        <div class="descr__item">
+          <div class="descr__pluses-info wow slideInLeft" data-wow-duration="1s">
+            <div class="descr__pluses-title">
+              Безопасность
+            </div>
+            <div class="descr__pluses-subtitle">
+              Все процедуры абсолютно гигиеничны <br> и делаются при строгом соблюдении норм безопасности
+            </div>
+          </div>
+          <div class="descr__img">
+            <img src="img/descr-3.jpg" alt="chair">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="sale">
+    <div class="container">
+      <div class="sale__inner">
+        <div class="sale__text">
+          <div class="sale__title">
+            Скидка 28% на окрашивание <br>
+            <span>и бесплатная стрижка</span>
+          </div>
+          <h4 class="sale__subtitle">в подарок!</h4>
+        </div>
+        <div class="sale__warning">
+          <div class="sale__crossed-price">
+            <s>2 545 р</s>
+            <h4>1 850 р</h4>
+          </div>
+          <div class="sale__offer">
+            <div class="sale__term">
+              <div class="sale__term-date">Акция
+                только до: <span> декабря!</span></div>
+              <button class="btn sale__btn popup-btn submit-btn">Позвонить</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statistics">
+    <div class="container">
+      <div class="statistics__inner">
+        <div class="statistics__item wow slideInLeft" data-wow-duration="1s">
+          <div class="statistics__number">
+            8
+            <span>лет работаем</span>
+          </div>
+        </div>
+
+        <div class="statistics__item wow slideInLeft" data-wow-duration="1.5s">
+          <div class="statistics__number">
+            4000+
+            <span>клиентов изменили себя у нас</span>
+          </div>
+        </div>
+
+        <div class="statistics__item wow slideInLeft" data-wow-duration="2s">
+          <div class="statistics__number">
+            967
+            <span>отдохнуло на нашем массаже</span>
+          </div>
+        </div>
+
+        <div class="statistics__item wow slideInLeft" data-wow-duration="2.5s">
+          <div class="statistics__number">
+            50+
+            <span>поситителей в день</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sertificate">
+    <div class="container">
+      <h3 class="title">
+        Сертификация услуг
+      </h3>
+      <div class="sertificate__inner">
+        <div class="sertificate__img">
+          <img src="img/sertificate.jpg" alt="certificate">
+        </div>
+        <div class="sertificate__text">
+          <h5 class="sertification__title">Соответствуем всем нормам <br></h5>
+          <h6 class="sertification__descr">
+            <p>Наши салоны есть в г. Киев , Самара и Минск</p>
+            <p>Перед тем как посетить процедуры наш консультант может обсудить с Вами все детали</p>
+            <p>Вы точно не уйдете от нас прежними.</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pluses">
+    <div class="container">
+      <div class="pluses__inner">
+        <div class="pluses__box-wrapper">
+          <div class="pluses__box--1 pluses__box wow fadeIn" data-wow-duration="1s">
+            <div class="pluses__box-title">Косметология</div>
+            <div class="pluses__box-subtitle">Эстетика — это наука о красоте. А косметология — это то, что
+              помогает Вам стать еще более красивой. Эстетический идеал — это чистая и гладкая кожа без лишних волос,
+              идеальный взгляд и ухоженный вид бровей. И мы поможем Вам его добиться!</div>
+          </div>
+
+          <div class="pluses__box--2 pluses__box wow fadeIn" data-wow-duration="1.5s">
+            <div class="pluses__box-title">Массаж</div>
+            <div class="pluses__box-subtitle">Истребляем Ваши болевые ощущения, чувство скованности, недостаточная
+              легкость тела, напряжение, упадок сил, снижение трудоспособности.</div>
+          </div>
+        </div>
+        <div class="pluses__box-wrapper">
+          <div class="pluses__box--3 pluses__box wow fadeIn" data-wow-duration="2s">
+            <div class="pluses__box-title">Уход за волосами(стрижка, покраска)</div>
+            <div class="pluses__box-subtitle">Замечая, как за окном происходит обновление природы, мы вслед за ней
+              пытаемся
+              что-то срочно поменять и в самом себе.</div>
+          </div>
+
+          <div class="pluses__box--4 pluses__box wow fadeIn" data-wow-duration="2.5s">
+            <div class="pluses__box-title">Макияж</div>
+            <div class="pluses__box-subtitle">Макияж – это искусство подчеркнуть достоинства лица и выявить его
+              индивидуальность – независимо от того, что сейчас модно.</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section class="trigger">
+    <div class="container">
+      <div class="trigger__inner">
+        <div class="trigger__offer">
+          <div class="trigger__discount">Скидка 28%</div>
+          <div class="trigger__crossed"><s>2 545 р</s></div>
+          <div class="trigger__now-price">1 850 р</div>
+        </div>
+        <div class="trigger__form">
+          <form class="validate-form" id="trigger__form" action="">
+            <div class="trigger__title">Оставляйте заявку сейчас и получите <span>бесплатную
+                стрижку!</span>
+            </div>
+            <input class="form-input" placeholder="Ваш телефон" type="phone">
+            <button class="btn submit-btn">Позвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="comparison">
+    <div class="container">
+      <div class="comparison__inner">
+        <div class="comparison__usual">
+          <div class="comparison__usual-title wow slideInLeft" data-wow-duration="1s"> Обычно</div>
+          <div class="comparison__usual-subtitle">Неизвестно о добросовестности<br>
+            Нету никаких документов, для поситителей вся информация скрыта
+          </div>
+          <div class="comparison__usual-subtitle">Мастер не очень много общается с тобой
+            на тему
+            твоей прически
+          </div>
+          <div class="comparison__usual-subtitle">Каждый работник - "мастер на все руки"
+          </div>
+          <div class="comparison__usual-subtitle">Цены неточны и могут доставать до небес
+          </div>
+        </div>
+
+        <div class="comparison__basque">
+          <div class="comparison__basque-title wow slideInRight" data-wow-duration="1s">
+            У нас
+          </div>
+          <div class="comparison__basque-subtitle">Полная открытость <br>
+            Есть «уголок потребителя», висящий на стене, доступная для гостей салона папка с документами и информацией
+            об
+            организации. В ней есть копии всех важных документов.</div>
+          <div class="comparison__basque-subtitle">Наш стилист всё уточнит,
+            расскажет о стоимости и процессе каждой стадии.
+          </div>
+          <div class="comparison__basque-subtitle">Мы работаем только с узконаправлеными
+            профессионалами, которые блистают только в своей области, но очень ярко.
+          </div>
+          <div class="comparison__basque-subtitle">В нашем прайс-листе, который ты
+            получишь при
+            входе в наш салон, написана стоимость за каждую услугу.
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <section class="map">
+    <div class="container">
+      <div class="map__inner">
+        <div class="map-item">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.789841168764!2d30.51987071557175!3d50.44501507947459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce567fa9b42f%3A0x7c42ce90252fbf12!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgMjMsINCa0LjQtdCyLCAwMTAwMQ!5e0!3m2!1sru!2sua!4v1597998550262!5m2!1sru!2sua"
+            width="460" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+
+        <div class="map__description">
+          <div class="map__suptitle">Сделать себя ещё красивее в Украине можно по адресу:</div>
+          <div class="map__title">Киев <br>
+            Печерский район, ул. Хрещатик, 23</div>
+          <div class="map__subtitle">Свяжитесь с нами</div>
+          <button class="btn popup-btn submit-btn">Позвонить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="img/logo.svg" alt="logo" class="logo">
+          <div class="footer__logo-text">
+            Beauty&Happy
+          </div>
+        </div>
+        <div class="footer__politics"><a href="#">Политика конфидециальности</a></div>
+        <div class="footer__numbers">Инн 999999999 <br>
+          ОГРН 489453453423</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    $(document).ready(
+      function () {
+        $("html").niceScroll({
+          cursorcolor: "#000"
+        });
+      }
+    );
+  </script>
+</body>
+
+</html>
