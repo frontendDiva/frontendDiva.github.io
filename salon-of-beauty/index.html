@@ -14,8 +14,9 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,23 +56,24 @@
           Салон для души и тела
         </div>
         <div class="main__form wow flipInX" data-wow-duration="1s">
-          <form class="validate-form" id="main" action="">
+          <form class="validate-form" id="main">
             <h3 class="main__form-title">Нет времени читать?</h3>
             <h5 class="main__form-subtitle">Оставляйте номер, мы вам перезвоним!</h5>
-            <input class="form-input" type="phone" placeholder="Ваш телефон">
+            <input  class="form-input phone-input" type="tel" placeholder="Ваш телефон">
+            <small class="warning">Введите номер телефона</small>
             <button class="btn submit-btn">Позвоните мне</button>
           </form>
         </div>
         <div class="hidden-popup">
-          <form class="validate-form" id="form" class="hidden-popup__form">
+          <form class="validate-form hidden-popup__form">
             <div class="hidden-popup__title">Обратный звонок</div>
             <div class="hidden-popup_subtitle">Оставляйте номер, мы вам перезвоним!</div>
-            <input class="form-input" type="phone" name="phone" placeholder="Ваш телефон"> <br>
+            <input class="form-input phone-input" type="tel" name="phone" placeholder="Ваш телефон"> <br>
+            <small class="warning">Введите номер телефона</small>
             <button class="btn submit-btn">ПЕРЕЗВОНИТЕ МНЕ</button>
           </form>
         </div>
         <div class="hidden-popup__bg"></div>
-      </div>
     </div>
     </div>
 
@@ -202,11 +204,11 @@
         </div>
         <div class="sertificate__text">
           <h5 class="sertification__title">Соответствуем всем нормам <br></h5>
-          <h6 class="sertification__descr">
+          <div class="sertification__descr">
             <p>Наши салоны есть в г. Киев , Самара и Минск</p>
             <p>Перед тем как посетить процедуры наш консультант может обсудить с Вами все детали</p>
             <p>Вы точно не уйдете от нас прежними.</p>
-          </h6>
+          </div>
         </div>
       </div>
     </div>
@@ -257,12 +259,13 @@
           <div class="trigger__now-price">1 850 р</div>
         </div>
         <div class="trigger__form">
-          <form class="validate-form" id="trigger__form" action="">
+          <form class="validate-form" id="trigger__form">
             <div class="trigger__title">Оставляйте заявку сейчас и получите <span>бесплатную
                 стрижку!</span>
             </div>
-            <input class="form-input" placeholder="Ваш телефон" type="phone">
-            <button class="btn submit-btn">Позвоните мне</button>
+            <input class="form-input phone-input" placeholder="Ваш телефон" type="tel">
+            <small class="warning">Введите номер телефона</small>
+            <button  class="btn submit-btn">Позвоните мне</button>
           </form>
         </div>
       </div>
@@ -317,7 +320,7 @@
         <div class="map-item">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.789841168764!2d30.51987071557175!3d50.44501507947459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce567fa9b42f%3A0x7c42ce90252fbf12!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgMjMsINCa0LjQtdCyLCAwMTAwMQ!5e0!3m2!1sru!2sua!4v1597998550262!5m2!1sru!2sua"
-            width="460" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            width="460" height="320" style="border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </div>
 
